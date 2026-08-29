@@ -1,0 +1,23 @@
+Ref,Qty,Part / value,Package,Status,Notes
+J1,1,Raspberry Pi 2x20 HAT header,2.54 mm TH,Baseline,Stacking height chosen after enclosure selection
+U1,1,SN75160BN,PDIP-20,Baseline,"Socketed, data-bus transceiver"
+U2,1,SN75161BN,PDIP-20,Baseline,"Socketed, management-bus transceiver"
+"U3,U4",2,TXS0108EPW,TSSOP-20,Baseline,Hand-solder-friendly custom footprint
+U5,1,CAT24C32WI-GT3,SOIC-8,Baseline,HAT+ ID EEPROM
+JP1,1,EEPROM write-enable jumper,1x2 2.54 mm TH,Baseline,Shunt fitted = WP low / write enabled
+J2,1,26-way keyed IDC/header,2x13 2.54 mm TH,Baseline,Internal IEEE-488 loom
+"R_ID1,R_ID2",2,3.9 kΩ 1%,0805,Baseline,HAT+ ID bus pull-ups
+R_WP,1,1 kΩ 1%,0805,Baseline,EEPROM WP pull-up
+R_EN_PD,1,10 kΩ,0805,Baseline,Translator OE pull-down
+"R_TE_PD,R_DC_PD,R_PE_PD",3,47 kΩ,0805,Provisional,Boot-state pulls
+R_SER_*,4,100 Ω,0805,Provisional,"GPIO17, TE, DC, PE series footprints"
+R_TERM_UP*,16,3.3 kΩ 1%,0805,Baseline,IEEE-488 termination
+R_TERM_DN*,16,6.2 kΩ 1%,0805,Baseline,IEEE-488 termination
+C_DEC*,5+,100 nF X7R,0805,Baseline,One per active IC supply group
+C_1U*,2,1 uF X7R,0805/1206,Baseline,Local rail bulk
+C_BULK,1,47 uF >=10 V,Radial/SMD,Baseline,+5V_GPIB bulk
+FB1,1,Ferrite bead or 0 Ω,1206,Populate after review,Pi 5V to GPIB rail
+R_5V_LINK,1,0 Ω removable link,1206/TH,Baseline,Bring-up rail isolation
+R_CHASSIS,1,0 Ω,1206/TH,Baseline,Single digital-ground/chassis bond
+C_CHASSIS,1,"DNP, value TBD",1206,Optional,HF-only chassis bond experiment
+TP*,~20,Test points,TH loop / large SMT,Baseline,Bring-up and service
