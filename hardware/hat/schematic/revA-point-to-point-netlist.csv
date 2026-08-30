@@ -1,0 +1,59 @@
+Net,Source ref/pin,Destination ref/pin,Notes
++5V_GPIB,Power sheet,"U1-20,U2-20,U3-19,U4-19",5V domain
++3V3_PI,Pi header,"U3-2,U4-2,U5-8",3.3V domain
+GND,Pi header,"U1-10,U2-10,U3-11,U4-11,U5-4",Digital ground
+GPIB_XLAT_EN,GPIO17,"U3-10,U4-10",10k pulldown
+GPIB_TE,GPIO18 via 100R,"U1-1,U2-1",47k pulldown
+GPIB_PE,GPIO7 via 100R,U1-11,47k pulldown
+GPIB_DC,GPIO8 via 100R,U2-11,47k pulldown
+DIO1_3V3,GPIO20,U3-1,A1
+DIO1_5V,U3-20,U1-19,B1 to D1
+BUS_DIO1,U1-2,J2-1,termination pair
+DIO2_3V3,GPIO26,U3-3,A2
+DIO2_5V,U3-18,U1-18,B2 to D2
+BUS_DIO2,U1-3,J2-2,termination pair
+DIO3_3V3,GPIO16,U3-4,A3
+DIO3_5V,U3-17,U1-17,B3 to D3
+BUS_DIO3,U1-4,J2-3,termination pair
+DIO4_3V3,GPIO19,U3-5,A4
+DIO4_5V,U3-16,U1-16,B4 to D4
+BUS_DIO4,U1-5,J2-4,termination pair
+DIO5_3V3,GPIO13,U3-6,A5
+DIO5_5V,U3-15,U1-15,B5 to D5
+BUS_DIO5,U1-6,J2-13,termination pair
+DIO6_3V3,GPIO12,U3-7,A6
+DIO6_5V,U3-14,U1-14,B6 to D6
+BUS_DIO6,U1-7,J2-14,termination pair
+DIO7_3V3,GPIO6,U3-8,A7
+DIO7_5V,U3-13,U1-13,B7 to D7
+BUS_DIO7,U1-8,J2-15,termination pair
+DIO8_3V3,GPIO5,U3-9,A8
+DIO8_5V,U3-12,U1-12,B8 to D8
+BUS_DIO8,U1-9,J2-16,termination pair
+EOI_3V3,GPIO9,U4-1,A1
+EOI_5V,U4-20,U2-14,B1
+BUS_EOI,U2-7,J2-5,termination pair
+DAV_3V3,GPIO10,U4-3,A2
+DAV_5V,U4-18,U2-15,B2
+BUS_DAV,U2-6,J2-6,termination pair
+NRFD_3V3,GPIO24,U4-4,A3
+NRFD_5V,U4-17,U2-16,B3
+BUS_NRFD,U2-5,J2-7,termination pair
+NDAC_3V3,GPIO23,U4-5,A4
+NDAC_5V,U4-16,U2-17,B4
+BUS_NDAC,U2-4,J2-8,termination pair
+IFC_3V3,GPIO22,U4-6,A5
+IFC_5V,U4-15,U2-18,B5
+BUS_IFC,U2-3,J2-9,termination pair
+SRQ_3V3,GPIO11,U4-7,A6
+SRQ_5V,U4-14,U2-12,B6
+BUS_SRQ,U2-9,J2-10,termination pair
+ATN_3V3,GPIO25,U4-8,A7
+ATN_5V,U4-13,U2-13,B7
+BUS_ATN,U2-8,J2-11,termination pair
+REN_3V3,GPIO27,U4-9,A8
+REN_5V,U4-12,U2-19,B8
+BUS_REN,U2-2,J2-17,termination pair
+ID_SD,GPIO0/pin27,U5-5,3.9k pullup
+ID_SC,GPIO1/pin28,U5-6,3.9k pullup
+EEPROM_WP,U5-7,JP1 + 1k pullup,jumper to GND enables write

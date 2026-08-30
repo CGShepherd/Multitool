@@ -1,0 +1,6 @@
+Zone,Approx area,Purpose,Notes
+A,65 x 12 mm,40-way header / ID EEPROM,Keep EEPROM close to ID pins
+B,30 x 35 mm,SN75160B PDIP + TXS0108E,Data section
+C,30 x 35 mm,SN75161B PDIP + TXS0108E,Control section
+D,65 x 10-15 mm edge bank,Termination + J2,May wrap around edge
+E,board-edge distributed,Test points / jumpers,Prioritise control and power
